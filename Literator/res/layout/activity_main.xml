@@ -4,13 +4,30 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity" >
 
-    <TextView
+    <Button
+        android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:text="@string/hello_world"
-        
-         />
+        android:onClick="onClick"
+        android:padding="20dp"
+        android:text="@string/button" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button"
+        android:padding="20dp"
+        android:text="@string/textView" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:hint="ISBN"
+        android:padding="20dp"
+        android:text="@string/editText" />
+
 
 </RelativeLayout>

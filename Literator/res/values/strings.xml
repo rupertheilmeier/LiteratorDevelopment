@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Literator</string>
+    <string name="app_name">BarcodeTest</string>
     <string name="hello_world">Hello world!</string>
     <string name="menu_settings">Settings</string>
+    <string name="editText">EditText</string>
+    <string name="button">Scan ISBN</string>
+    <string name="textView">Barcode: </string>
+    <string name="ISBN">ISBN</string>
 
 </resources>
