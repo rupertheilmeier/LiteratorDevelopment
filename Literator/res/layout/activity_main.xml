@@ -3,9 +3,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity" >
+    
+    <ImageView 
+        android:id="@+id/headerbar"
+        android:src="@drawable/header_bar"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        />
 
     <Button
         android:id="@+id/button"
+        android:layout_below="@id/headerbar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="onClick"
@@ -28,6 +38,92 @@
         android:hint="ISBN"
         android:padding="20dp"
         android:text="@string/editText" />
+    
+    <LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/buttonlayout"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:height="45dip"
+    android:gravity="left|bottom"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:layout_alignParentBottom="true"
+    >
+ 
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/buttonlayout2"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:gravity="left|center_vertical"
+            android:layout_gravity="left"
+            android:layout_width="wrap_content">
+ 
+                <Button
+                    android:id="@+id/actionbarHome"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    />
+ 
+                <LinearLayout
+                    android:id="@+id/linearLayout1"
+                    android:layout_width="2dp"
+                    android:layout_height="45dip"
+                    android:orientation="horizontal"
+                    android:background="#8B1A1A" >
+ 
+                </LinearLayout>
+ 
+                <TextView
+                    android:id="@+id/actionbarTxt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:textStyle="bold"
+                    android:text="Meine ActionBar"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="7dp">
+                </TextView>
+        </LinearLayout>
+ 
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/buttonlayout2"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_gravity="right"
+            android:layout_width="fill_parent">
+ 
+            <Button
+                android:id="@+id/actionbarFunk1"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:background="@android:drawable/ic_menu_share">
+            </Button>
+ 
+            <LinearLayout
+                android:id="@+id/actionbar_seperator_funk"
+                android:layout_width="2dp"
+                android:layout_height="45dip"
+                android:background="#8B1A1A"
+                android:orientation="horizontal" >
+            </LinearLayout>
+ 
+            <Button
+                android:id="@+id/actionbarFunk2"
+                android:layout_width="45sp"
+                android:layout_height="45dp"
+                android:background="@android:drawable/ic_menu_preferences">
+            </Button>
+ 
+        </LinearLayout>
+</LinearLayout>
 
 
 </RelativeLayout>
