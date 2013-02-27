@@ -8,5 +8,8 @@
     <string name="button">Scan ISBN</string>
     <string name="textView">Barcode: </string>
     <string name="ISBN">ISBN</string>
+    <string name="header_bar">header_bar</string>
+    <string name="menue_bar_layer1">menue_bar_layer1</string>
+    <string name="tab_button">tab_button</string>
 
 </resources>

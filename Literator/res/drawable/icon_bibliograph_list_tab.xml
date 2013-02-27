@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!-- Wenn geklickt dann roll_over -->
+    <item android:drawable="@drawable/roll_over_bibliograph"
+          android:state_selected="true"></item>
+    <!-- Wenn noch nicht geklickt -->
+    <item android:drawable="@drawable/normal_bibliograph" />
+
+</selector>

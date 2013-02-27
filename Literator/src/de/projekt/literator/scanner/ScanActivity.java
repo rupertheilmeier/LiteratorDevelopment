@@ -21,8 +21,8 @@ public class ScanActivity extends Activity {
 			super.onCreate(savedInstanceState);
 			setContentView(R.layout.activity_main);
 			
-			button = (Button) findViewById(R.id.button);
-			editText= (EditText) findViewById(R.id.editText);
+//			button = (Button) findViewById(R.id.button);
+//			editText= (EditText) findViewById(R.id.editText);
 		}
 
 		@Override
@@ -32,23 +32,23 @@ public class ScanActivity extends Activity {
 			return true;
 		}
 		
-		public void onClick(View view){
-			
-			IntentIntegrator integrator = new IntentIntegrator(this);
-			integrator.initiateScan();
-			
-		}
-		
-		public void onActivityResult(int requestCode, int resultCode, Intent intent) {
-			  IntentResult scanResult = IntentIntegrator.parseActivityResult(requestCode, resultCode, intent);
-			  if (scanResult != null) {
-			    String barcode = scanResult.getContents();
-			    
-			    editText.setText(barcode);
-			  }
-			  // else continue with any other code you need in the method
-			 
-			}
+//		public void onClick(View view){
+//			
+//			IntentIntegrator integrator = new IntentIntegrator(this);
+//			integrator.initiateScan();
+//			
+//		}
+//		
+//		public void onActivityResult(int requestCode, int resultCode, Intent intent) {
+//			  IntentResult scanResult = IntentIntegrator.parseActivityResult(requestCode, resultCode, intent);
+//			  if (scanResult != null) {
+//			    String barcode = scanResult.getContents();
+//			    
+//			    editText.setText(barcode);
+//			  }
+//			  // else continue with any other code you need in the method
+//			 
+//			}
 
 	}
 
