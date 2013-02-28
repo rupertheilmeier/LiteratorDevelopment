@@ -17,38 +17,37 @@ public final class R {
         public static final int icon_books_tab=0x7f020003;
         public static final int icon_mail_tab=0x7f020004;
         public static final int icon_prefrences_tab=0x7f020005;
-        public static final int menue_bar_layer1=0x7f020006;
-        public static final int normal_bibliograph=0x7f020007;
-        public static final int normal_mail=0x7f020008;
-        public static final int normal_prefrences=0x7f020009;
-        public static final int normal_scanned_books=0x7f02000a;
-        public static final int roll_over_bibliograph=0x7f02000b;
-        public static final int roll_over_mail=0x7f02000c;
-        public static final int roll_over_prefrences=0x7f02000d;
-        public static final int roll_over_scanned_books=0x7f02000e;
-        public static final int scan_isbn=0x7f02000f;
+        public static final int icon_scan_tab=0x7f020006;
+        public static final int menue_bar_layer1=0x7f020007;
+        public static final int normal_bibliograph=0x7f020008;
+        public static final int normal_mail=0x7f020009;
+        public static final int normal_prefrences=0x7f02000a;
+        public static final int normal_scanned_books=0x7f02000b;
+        public static final int roll_over_bibliograph=0x7f02000c;
+        public static final int roll_over_mail=0x7f02000d;
+        public static final int roll_over_prefrences=0x7f02000e;
+        public static final int roll_over_scanned_books=0x7f02000f;
+        public static final int scan_isbn=0x7f020010;
     }
     public static final class id {
-        public static final int header_bar=0x7f070000;
-        public static final int menu_settings=0x7f07000b;
-        public static final int menue_bar_layer1=0x7f070001;
-        public static final int normal_bibliograph=0x7f070007;
-        public static final int normal_mail=0x7f070009;
-        public static final int normal_prefrences=0x7f070004;
-        public static final int normal_scanned_books=0x7f070002;
-        public static final int roll_over_bibliograph=0x7f070008;
-        public static final int roll_over_mail=0x7f07000a;
-        public static final int roll_over_prefrences=0x7f070005;
-        public static final int roll_over_scannend_books=0x7f070003;
-        public static final int scan_isbn=0x7f070006;
+        public static final int bibTest=0x7f070000;
+        public static final int bookTest=0x7f070001;
+        public static final int edittext=0x7f070002;
+        public static final int header_bar=0x7f070004;
+        public static final int mailTest=0x7f070003;
+        public static final int menu_settings=0x7f070008;
+        public static final int menue_bar_layer1=0x7f070005;
+        public static final int prefTest=0x7f070006;
+        public static final int scanTest=0x7f070007;
     }
     public static final class layout {
         public static final int activity_bibligraph_list=0x7f030000;
         public static final int activity_books=0x7f030001;
-        public static final int activity_mail=0x7f030002;
-        public static final int activity_main=0x7f030003;
-        public static final int activity_prefrences=0x7f030004;
-        public static final int activity_scan=0x7f030005;
+        public static final int activity_edit_isbn=0x7f030002;
+        public static final int activity_mail=0x7f030003;
+        public static final int activity_main=0x7f030004;
+        public static final int activity_prefrences=0x7f030005;
+        public static final int activity_scan=0x7f030006;
     }
     public static final class menu {
         public static final int activity_main=0x7f060000;

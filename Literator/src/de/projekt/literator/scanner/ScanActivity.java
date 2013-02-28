@@ -1,5 +1,6 @@
 package de.projekt.literator.scanner;
 
+import de.projekt.literator.EditActivity;
 import de.projekt.literator.R;
 import android.app.Activity;
 import android.content.Intent;
@@ -13,16 +14,14 @@ public class ScanActivity extends Activity {
 	
 	
 		
-		private Button button;
-		private EditText editText;
+		
 
 		@Override
 		protected void onCreate(Bundle savedInstanceState) {
 			super.onCreate(savedInstanceState);
 			setContentView(R.layout.activity_main);
 			
-//			button = (Button) findViewById(R.id.button);
-//			editText= (EditText) findViewById(R.id.editText);
+			
 		}
 
 		@Override
@@ -32,23 +31,28 @@ public class ScanActivity extends Activity {
 			return true;
 		}
 		
-//		public void onClick(View view){
-//			
-//			IntentIntegrator integrator = new IntentIntegrator(this);
-//			integrator.initiateScan();
-//			
-//		}
-//		
-//		public void onActivityResult(int requestCode, int resultCode, Intent intent) {
-//			  IntentResult scanResult = IntentIntegrator.parseActivityResult(requestCode, resultCode, intent);
-//			  if (scanResult != null) {
-//			    String barcode = scanResult.getContents();
-//			    
-//			    editText.setText(barcode);
-//			  }
-//			  // else continue with any other code you need in the method
-//			 
-//			}
+		public void onClick(View view){
+			
+			IntentIntegrator integrator = new IntentIntegrator(this);
+			integrator.initiateScan();
+			
+		}
+		
+		public void onActivityResult(int requestCode, int resultCode, Intent intent) {
+			  IntentResult scanResult = IntentIntegrator.parseActivityResult(requestCode, resultCode, intent);
+			  if (scanResult != null) {
+			    String barcode = scanResult.getContents();
+			    
+			    Intent i = new Intent(ScanActivity.this, EditActivity.class);
+			    i.putExtra("isbn", barcode);
+			    
+			    startActivity(i);
+			    
+			    
+			  }
+			  // else continue with any other code you need in the method
+			 
+			}
 
 	}
 
