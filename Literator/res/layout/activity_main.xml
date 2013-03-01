@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity" >
-    
+
     <ImageView
         android:id="@+id/header_bar"
         android:layout_width="fill_parent"
@@ -11,8 +11,8 @@
         android:layout_centerHorizontal="true"
         android:contentDescription="@string/header_bar"
         android:src="@drawable/header_bar" />
-    
-     <ImageView
+
+    <ImageView
         android:id="@+id/menue_bar_layer1"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
@@ -21,29 +21,39 @@
         android:contentDescription="@string/menue_bar_layer1"
         android:src="@drawable/menue_bar_layer1" />
 
-    <TabHost xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@android:id/tabhost"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent">
-    <RelativeLayout
-        android:orientation="vertical"
+    <TabHost
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@android:id/tabhost"
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent">
-        <TabWidget
-            android:id="@android:id/tabs"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-             />
-        <FrameLayout
-            android:id="@android:id/tabcontent"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"/>
-    </RelativeLayout>
-</TabHost>
-    
-   
+        android:layout_height="fill_parent" >
 
-    
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="fill_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1" >
+            </FrameLayout>
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_weight="0"
+                android:background="@color/tabDark" />
+        </RelativeLayout>
+    </TabHost>
+
+    <ImageButton
+        android:layout_width="70sp"
+        android:layout_height="70sp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/scan_isbn" />
 
 </RelativeLayout>
