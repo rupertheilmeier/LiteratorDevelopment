@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+ 
+    <string name="header_bar">header_bar</string>
+    <string name="menue_bar_layer1">menue_bar_layer1</string>
+    <string name="tab_button">tab_button</string>
     <string name="app_name">BarcodeTest</string>
     <string name="hello_world">Hello world!</string>
     <string name="menu_settings">Settings</string>
@@ -8,8 +12,14 @@
     <string name="button">Scan ISBN</string>
     <string name="textView">Barcode: </string>
     <string name="ISBN">ISBN</string>
-    <string name="header_bar">header_bar</string>
-    <string name="menue_bar_layer1">menue_bar_layer1</string>
-    <string name="tab_button">tab_button</string>
+    <string name="author_lastname_text">Author last Name: </string>
+    <string name="author_firstname_text">Author first Name: </string>
+    <string name="title_text">Title: </string>
+    <string name="year_text">Year: </string>
+    <string name="place_text">Place: </string>
+    <string name="publisher_text">Publisher: </string>
+    <string name="goToSource_button_text">Watch source online</string>
+    <string name="enter_button_text">Submit book to list</string>
+    <string name="zitierweise">Zitierweise: </string>
 
 </resources>

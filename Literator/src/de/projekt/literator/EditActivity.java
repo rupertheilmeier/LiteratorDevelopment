@@ -7,16 +7,18 @@ import android.widget.EditText;
 
 public class EditActivity extends Activity {
 
-	private EditText editText;
+	private EditText authorLastName;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_edit_isbn);
-		editText= (EditText) findViewById(R.id.edittext);
+		
+		authorLastName= (EditText) findViewById(R.id.author_edittext);
+		
 		Bundle bundle=getIntent().getExtras();
 		String ergebnis= bundle.getString("isbn");
-		editText.setText(ergebnis);
+		authorLastName.setText(ergebnis);
 	}
 
 	@Override
@@ -27,3 +29,4 @@ public class EditActivity extends Activity {
 	}
 
 }
+

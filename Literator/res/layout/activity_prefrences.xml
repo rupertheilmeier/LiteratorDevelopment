@@ -1,16 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-     >
-    
-     <TextView 
+    android:layout_height="match_parent" >
+
+     <ImageView
+        android:id="@+id/header_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/header_bar"
+        android:src="@drawable/header_bar" />
+    <TextView
+        android:id="@+id/bibTest"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
         android:layout_centerInParent="true"
-        android:text="prefrences"
-        android:id="@+id/prefTest"
+        android:layout_marginTop="5dp"
+        android:text="Prefrences"
         android:textColor="@android:color/white"
-        />
+        android:textSize="40dp" />
 
 </RelativeLayout>

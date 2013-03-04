@@ -1,15 +1,22 @@
 package de.projekt.literator;
 
-import de.projekt.literator.scanner.ScanActivity;
+import android.app.AlertDialog;
 import android.app.TabActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TabHost;
-import android.widget.TabHost.TabSpec;
+import android.widget.TextView;
+import de.projekt.literator.scanner.IntentIntegrator;
+import de.projekt.literator.scanner.IntentResult;
+import de.projekt.literator.scanner.ScanActivity;
 
 
 
@@ -17,6 +24,9 @@ public class StartActivity extends TabActivity {
 
 	
 	private TabHost tabHost;
+	private ImageButton scanButton;
+	
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -27,7 +37,63 @@ public class StartActivity extends TabActivity {
 	private void setupTabUI() {
 		tabHost = getTabHost();
 		setTabs();
+		
+		scanButton = (ImageButton) findViewById(R.id.scan_button);
+		
+		scanButton.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				IntentIntegrator integrator = new IntentIntegrator(StartActivity.this);
+				integrator.initiateScan();
+				
+				
+			}
+		});
+		
+		
 	}
+	
+	
+	
+	
+	public void onActivityResult(int requestCode, int resultCode, Intent intent) {
+		  IntentResult scanResult = IntentIntegrator.parseActivityResult(requestCode, resultCode, intent);
+		  if (scanResult != null) {
+			  //hier stehen die ganzen scan daten drin
+		    String barcode = scanResult.getContents();
+		     // prüft ob es sich um eine isbn handelt
+		    if (barcode.substring(0, 3).equals("978")||barcode.substring(0, 2).equals("979")){
+		    	
+//		    	isbnNumber.setText(barcode);
+//		    	
+//		    	this.barcode = barcode;
+		    	
+		    	Intent i = new Intent(StartActivity.this, EditActivity.class);
+			    i.putExtra("isbn", barcode);
+			    
+			    startActivity(i);
+			    
+			    
+		    }else{
+		    	//alert dialog wenn es sich nciht um isbn handelt
+		    	AlertDialog alertDialog = new AlertDialog.Builder(StartActivity.this).create();
+		    	alertDialog.setTitle("No Book Scanned!");
+		    	alertDialog.setMessage("The Code you scanned (" + barcode + ") is not an ISBN!");
+		    	alertDialog.show();
+		    	
+		    }
+		    
+		    
+		    
+		    
+		  }
+		  // else continue with any other code you need in the method
+		 
+		}
+	
+	
+	
 	private void setTabs()
 	{
 		addTab("scanned_books", R.drawable.icon_books_tab, BooksActivity.class);
@@ -48,37 +114,7 @@ public class StartActivity extends TabActivity {
 		spec.setContent(intent);
 		tabHost.addTab(spec);
 	}
-//		TabSpec booksspec = tabHost.newTabSpec("books");
-//		booksspec.setIndicator(null, getResources().getDrawable(R.drawable.icon_books_tab));
-//        Intent booksIntent = new Intent(this, BooksActivity.class);
-//        booksspec.setContent(booksIntent);
-//        
-//        TabSpec bibliographList = tabHost.newTabSpec("lists");
-//		bibliographList.setIndicator(null, getResources().getDrawable(R.drawable.icon_bibliograph_list_tab));
-//        Intent bibliographIntent = new Intent(this, ListsActivity.class);
-//        bibliographList.setContent(bibliographIntent);
-//        
-//        TabSpec scanspec = tabHost.newTabSpec("scan");
-//		scanspec.setIndicator(null, getResources().getDrawable(R.drawable.icon_scan_tab));
-//        Intent scanIntent = new Intent(this, ScanActivity.class);
-//        scanspec.setContent(scanIntent);
-//        
-//        TabSpec mailspec = tabHost.newTabSpec("mail");
-//		mailspec.setIndicator(null, getResources().getDrawable(R.drawable.icon_mail_tab));
-//        Intent mailIntent = new Intent(this, MailActivity.class);
-//        mailspec.setContent(mailIntent);
-//        
-//        TabSpec prefrencesspec = tabHost.newTabSpec("prefrences");
-//		prefrencesspec.setIndicator(null, getResources().getDrawable(R.drawable.icon_prefrences_tab));
-//        Intent prefrencesIntent = new Intent(this, ListsActivity.class);
-//        prefrencesspec.setContent(prefrencesIntent);
-//        
-//        tabHost.addTab(booksspec);
-//        tabHost.addTab(bibliographList);
-//        tabHost.addTab(scanspec);
-//        tabHost.addTab(mailspec);
-//        tabHost.addTab(prefrencesspec);
-//	}
+
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
