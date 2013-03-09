@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
- 
     <string name="header_bar">header_bar</string>
     <string name="menue_bar_layer1">menue_bar_layer1</string>
     <string name="tab_button">tab_button</string>
@@ -12,14 +11,34 @@
     <string name="button">Scan ISBN</string>
     <string name="textView">Barcode: </string>
     <string name="ISBN">ISBN</string>
-    <string name="author_lastname_text">Author last Name: </string>
-    <string name="author_firstname_text">Author first Name: </string>
-    <string name="title_text">Title: </string>
-    <string name="year_text">Year: </string>
-    <string name="place_text">Place: </string>
-    <string name="publisher_text">Publisher: </string>
-    <string name="goToSource_button_text">Watch source online</string>
-    <string name="enter_button_text">Submit book to list</string>
-    <string name="zitierweise">Zitierweise: </string>
+    <string name="author_lastname_text">Author Nachname: </string>
+    <string name="author_firstname_text">Author Vorname: </string>
+    <string name="title_text">Titel: </string>
+    <string name="year_text">Jahr: </string>
+    <string name="place_text">Ort: </string>
+    <string name="publisher_text">Herausgeber: </string>
+    <string name="goToSource_button_text">Quelle online anschauen</string>
+    <string name="enter_button_text">Buch in Liste speichern</string>
+    <string name="spinner_ueberschrift_zitierw">Zitierweise: </string>
+    <string name="spinner_ueberschrift_sprache">Sprache: </string>
+    <string name="zitierweise_prompt">Zitierweise</string>
+    <string name="list_activity">Liste</string>
+    <string name="book_activity">Bücher</string>
+    <string name="mail_activity">Mail</string>
+    <string name="prefrences_activity">Einstellungen</string>
+
+    <string-array name="zitier_arrays">
+        <item>Apa</item>
+        <item>other</item>
+    </string-array>
+
+    <string name="sprache_prompt">Sprache</string>
+
+    <string-array name="sprache_arrays">
+        <item>Deutsch</item>
+        <item>English</item>
+    </string-array>
+    
+    <string name="abschick_button">Speichern</string>
 
 </resources>

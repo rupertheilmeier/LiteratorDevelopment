@@ -12,13 +12,13 @@
         android:src="@drawable/header_bar" />
 
     <TextView
-        android:id="@+id/bibTest"
+        android:id="@+id/list_ueberschrift"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerInParent="true"
         android:layout_marginTop="5dp"
-        android:text="List"
+        android:text="@string/list_activity"
         android:textColor="@android:color/white"
         android:textSize="40dp" />
 

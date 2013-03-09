@@ -11,14 +11,59 @@
         android:contentDescription="@string/header_bar"
         android:src="@drawable/header_bar" />
     <TextView
-        android:id="@+id/bibTest"
+        android:id="@+id/prefrences_ueberschrift"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerInParent="true"
         android:layout_marginTop="5dp"
-        android:text="Prefrences"
+        android:text="@string/prefrences_activity"
         android:textColor="@android:color/white"
         android:textSize="40dp" />
-
+    <TextView 
+        android:id="@+id/zitierstil"
+        android:text="@string/spinner_ueberschrift_zitierw"
+        android:textSize="20dp"
+        android:layout_margin="5dp"
+        android:layout_below="@id/prefrences_ueberschrift"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/background_dark"
+        />
+    
+	<Spinner 
+	    android:id="@+id/spinner_zitierstil"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:entries="@array/zitier_arrays"
+	    android:prompt="@string/zitierweise_prompt"
+	    android:layout_below="@id/zitierstil"
+	    />
+	<TextView 
+        android:id="@+id/sprache"
+        android:text="@string/spinner_ueberschrift_sprache"
+        android:textSize="20dp"
+        android:layout_margin="5dp"
+        android:layout_below="@id/spinner_zitierstil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/background_dark"
+        />
+	<Spinner 
+	    android:id="@+id/spinner_sprache"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/sprache"
+	    android:entries="@array/sprache_arrays"
+	    android:prompt="@string/sprache_prompt"
+	    />
+	
+	<Button 
+	    android:id="@+id/button_abschicken"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/spinner_sprache"
+	    android:layout_margin="5dp"
+	    android:text="@string/abschick_button"
+	    />
 </RelativeLayout>
