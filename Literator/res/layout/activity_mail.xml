@@ -21,5 +21,13 @@
         android:text="@string/mail_activity"
         android:textColor="@android:color/white"
         android:textSize="40dp" />
+    
+    <Button 
+        android:id="@+id/mail_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="send"
+        />
 
 </RelativeLayout>
