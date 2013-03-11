@@ -6,13 +6,13 @@ import android.view.Menu;
 import android.widget.TextView;
 
 public class BooksActivity extends Activity {
-	
-	
+
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_books);
-		
+
 	}
 
 	@Override

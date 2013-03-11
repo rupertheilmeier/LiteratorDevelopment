@@ -21,5 +21,12 @@
         android:text="@string/book_activity"
         android:textColor="@android:color/white"
         android:textSize="40dp" />
+    
+    <ListView
+	android:id="@+id/tasklist"
+	android:layout_below="@id/header_bar"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" >
+</ListView>
 
 </RelativeLayout>

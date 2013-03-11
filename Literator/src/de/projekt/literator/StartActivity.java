@@ -6,17 +6,15 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.widget.Button;
-import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TabHost;
-import android.widget.TextView;
+import android.widget.Toast;
 import de.projekt.literator.scanner.IntentIntegrator;
 import de.projekt.literator.scanner.IntentResult;
-import de.projekt.literator.scanner.ScanActivity;
 
 
 
@@ -123,4 +121,18 @@ public class StartActivity extends TabActivity {
 		return true;
 	}
 
+	public boolean onOptionsItemSelected(MenuItem item) {
+	      switch (item.getItemId()) {
+	      case R.id.help:
+	           Intent helpIntent= new Intent(StartActivity.this,HelpActivity.class);
+	           startActivity(helpIntent);
+	            return true;
+	      case R.id.about:
+	           Intent aboutIntent= new Intent(StartActivity.this,AboutActivity.class);
+	           startActivity(aboutIntent);
+	            return true;
+	      default:
+	            return super.onOptionsItemSelected(item);
+	      }
+}
 }

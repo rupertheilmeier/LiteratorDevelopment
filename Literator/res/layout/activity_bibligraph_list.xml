@@ -22,4 +22,13 @@
         android:textColor="@android:color/white"
         android:textSize="40dp" />
 
+    <EditText
+        android:id="@+id/Test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/list_ueberschrift"
+        android:layout_marginBottom="170dp"
+         />
+
 </RelativeLayout>

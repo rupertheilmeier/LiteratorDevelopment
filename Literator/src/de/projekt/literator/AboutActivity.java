@@ -1,15 +1,40 @@
 package de.projekt.literator;
 
-import android.os.Bundle;
 import android.app.Activity;
+import android.content.Intent;
+import android.os.Bundle;
 import android.view.Menu;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
 
 public class AboutActivity extends Activity {
-
+	private Button about_back;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_main);
+		setContentView(R.layout.activity_about);
+		setupUI();
+		setupButton();
+	}
+
+	private void setupButton() {
+		about_back.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+			Intent i= new Intent(AboutActivity.this,StartActivity.class);
+			startActivity(i);
+				
+			}
+		});
+		
+	}
+
+	private void setupUI() {
+		about_back=(Button)findViewById(R.id.testabout);
+		
+		
 	}
 
 	@Override
