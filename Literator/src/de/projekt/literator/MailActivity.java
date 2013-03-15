@@ -1,7 +1,9 @@
 package de.projekt.literator;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
@@ -20,6 +22,8 @@ public class MailActivity extends Activity {
 		setContentView(R.layout.activity_mail);
 		setupButton();
 	}
+
+
 
 	private void setupButton() {
 		send=(Button)findViewById(R.id.mail_send);

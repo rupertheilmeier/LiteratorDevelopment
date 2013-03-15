@@ -39,8 +39,8 @@
     <string name="sprache_prompt">Sprache</string>
 
     <string-array name="sprache_arrays">
-        <item>Deutsch</item>
         <item>English</item>
+        <item>Deutsch</item>
     </string-array>
     
     <string name="abschick_button">Speichern</string>
