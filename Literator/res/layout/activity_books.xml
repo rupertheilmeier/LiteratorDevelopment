@@ -23,7 +23,7 @@
         android:textSize="40dp" />
     
     <ListView
-	android:id="@+id/tasklist"
+	android:id="@+id/booklistview"
 	android:layout_below="@id/header_bar"
     android:layout_width="fill_parent" 
     android:layout_height="wrap_content" >

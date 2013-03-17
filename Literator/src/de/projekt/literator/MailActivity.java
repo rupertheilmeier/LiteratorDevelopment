@@ -1,19 +1,18 @@
 package de.projekt.literator;
 
 import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 
 public class MailActivity extends Activity {
-	private String betreff;
-	private String content;
-	private String empfaenger;
+	private String betreff="Literator_Awesome_app";
+	private String content="test buch";
 	private Button send;
 
 	@Override
@@ -38,21 +37,17 @@ public class MailActivity extends Activity {
 		});
 	}
 
-//	@Override
-//	public void onResume() {
-//		super.onResume();
-//		sendEmail();
-//	}
-
 	private void sendEmail() {
-		// setType zum öffnen des richtigen Progamms
+		SharedPreferences sp = PreferenceManager
+				.getDefaultSharedPreferences(this);
+		String emailString = sp.getString("email", "");
 		Intent i = new Intent(Intent.ACTION_SEND);
 
+		// setType zum öffnen des richtigen Progamms
 		i.setType("message/rfc822");
-
 		// Für Empfänger
 
-		i.putExtra(Intent.EXTRA_EMAIL, new String[] { "recipient@example.com" });
+		i.putExtra(Intent.EXTRA_EMAIL, new String []{emailString});
 		i.putExtra(Intent.EXTRA_SUBJECT, betreff);
 		i.putExtra(Intent.EXTRA_TEXT, content);
 		try {

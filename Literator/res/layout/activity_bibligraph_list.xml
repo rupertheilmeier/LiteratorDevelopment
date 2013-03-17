@@ -24,11 +24,24 @@
 
     <EditText
         android:id="@+id/Test"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignRight="@+id/list_ueberschrift"
-        android:layout_marginBottom="170dp"
-         />
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/list_ueberschrift"
+        android:text="Frassetto, L ; RC Morris, Jr. ; Sellmeyer, DE ; Todd, K ; Sebastian, A: Diet,
+evolution and aging – The pathophysiologic eﬀects of the post-agricultural inversion
+of the potassium-to-sodium and base-to-chloride ratios in the human diet. In: Eur J
+Nutr 40 (2001), S. 200–213
+Frassetto, LA ; Todd, KM ; RC Morris, Jr. ; Sebastian, A: Estimation of net
+endogenous noncarbonic acid production in humans from diet potassium and protein
+contents. In: Am J Clin Nutr 68 (1998), S. 576–583
+Peacock, M ; Robertson, WG: Urolithiasis: etiology, diagnosis. Kap. Pathogenesis
+of Urolithiasis, S. 255–258. Berlin : Springer, 1985
+Remer, T: Inﬂuence of Diet on Acid-Base Balance. In: Semin Dial 13 (2000), Nr. 4,
+S. 221–226
+Remer, T ; Manz, F: Estimation of the renal net acid excretion by adults consuming
+diets containing variable amounts of protein. In: Am J Clin Nutr 59 (1994), S. 1356–
+1361
+Robertson, JD ; Manghan, RJ: Acid-base status of pre-menopausal vegetarian and
+omnivorous women. In: Proc Nutr Soc 51 (1992), S. 32, Abstract" />
 
 </RelativeLayout>

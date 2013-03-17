@@ -84,7 +84,6 @@ public class PrefrencesActivity extends Activity {
 		sprache_spinner.setSelection(sp.getInt("spinnerSelectionLanguage",0));
 		zitier_spinner.setSelection(sp.getInt("spinnerSelectionZitier", 0) );
 		emailEdit.setText(emailString);
-
 	}
 
 	private void savePref(String key, String value) {
@@ -166,6 +165,7 @@ public class PrefrencesActivity extends Activity {
 		sprache_spinner = (Spinner) findViewById(R.id.spinner_sprache);
 		abschicken = (Button) findViewById(R.id.button_abschicken);
 		emailEdit = (EditText) findViewById(R.id.email_edittext);
+		
 
 	}
 

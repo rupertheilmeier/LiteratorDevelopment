@@ -8,6 +8,10 @@
 package de.projekt.literator;
 
 public final class R {
+    public static final class array {
+        public static final int sprache_arrays=0x7f070001;
+        public static final int zitier_arrays=0x7f070000;
+    }
     public static final class attr {
     }
     public static final class color {
@@ -52,53 +56,98 @@ public final class R {
         public static final int tab_unselected=0x7f020018;
     }
     public static final class id {
-        public static final int bibTest=0x7f090000;
-        public static final int bookTest=0x7f090001;
-        public static final int edittext=0x7f090002;
-        public static final int header_bar=0x7f090004;
-        public static final int icon=0x7f090008;
-        public static final int mailTest=0x7f090003;
-        public static final int menu_settings=0x7f090009;
-        public static final int menue_bar_layer1=0x7f090005;
-        public static final int prefTest=0x7f090006;
-        public static final int scanTest=0x7f090007;
+        public static final int Test=0x7f0a0004;
+        public static final int about=0x7f0a0026;
+        public static final int addList=0x7f0a0005;
+        public static final int author_firstname_textview=0x7f0a0008;
+        public static final int author_name_edittext=0x7f0a0009;
+        public static final int autor_nachname=0x7f0a0022;
+        public static final int autor_vorname=0x7f0a0023;
+        public static final int booklistview=0x7f0a0007;
+        public static final int books_ueberschrift=0x7f0a0006;
+        public static final int button_abschicken=0x7f0a001f;
+        public static final int email_edittext=0x7f0a001e;
+        public static final int email_text=0x7f0a001d;
+        public static final int enter_button=0x7f0a0013;
+        public static final int header_bar=0x7f0a0002;
+        public static final int help=0x7f0a0025;
+        public static final int icon=0x7f0a0024;
+        public static final int isbn=0x7f0a0012;
+        public static final int list_ueberschrift=0x7f0a0003;
+        public static final int mail_send=0x7f0a0016;
+        public static final int mail_ueberschrift=0x7f0a0015;
+        public static final int place_edittext=0x7f0a000f;
+        public static final int place_textview=0x7f0a000e;
+        public static final int prefrences_ueberschrift=0x7f0a0018;
+        public static final int publisher_edittext=0x7f0a0011;
+        public static final int publisher_textview=0x7f0a0010;
+        public static final int scanTest=0x7f0a0020;
+        public static final int scan_button=0x7f0a0017;
+        public static final int spinner_sprache=0x7f0a001c;
+        public static final int spinner_zitierstil=0x7f0a001a;
+        public static final int sprache=0x7f0a001b;
+        public static final int testHelp=0x7f0a0014;
+        public static final int testabout=0x7f0a0000;
+        public static final int textAbout=0x7f0a0001;
+        public static final int titel=0x7f0a0021;
+        public static final int title_edittext=0x7f0a000b;
+        public static final int title_textview=0x7f0a000a;
+        public static final int year_edittext=0x7f0a000d;
+        public static final int year_textview=0x7f0a000c;
+        public static final int zitierstil=0x7f0a0019;
     }
     public static final class layout {
-        public static final int activity_bibligraph_list=0x7f030000;
-        public static final int activity_books=0x7f030001;
-        public static final int activity_edit_isbn=0x7f030002;
-        public static final int activity_mail=0x7f030003;
-        public static final int activity_main=0x7f030004;
-        public static final int activity_prefrences=0x7f030005;
-        public static final int activity_scan=0x7f030006;
-        public static final int tab_indicator=0x7f030007;
+        public static final int activity_about=0x7f030000;
+        public static final int activity_bibligraph_list=0x7f030001;
+        public static final int activity_bibliograph_list_vorlaeufig=0x7f030002;
+        public static final int activity_books=0x7f030003;
+        public static final int activity_edit_isbn=0x7f030004;
+        public static final int activity_help=0x7f030005;
+        public static final int activity_mail=0x7f030006;
+        public static final int activity_main=0x7f030007;
+        public static final int activity_prefrences=0x7f030008;
+        public static final int activity_scan=0x7f030009;
+        public static final int books_list_item=0x7f03000a;
+        public static final int tab_indicator=0x7f03000b;
     }
     public static final class menu {
-        public static final int activity_main=0x7f080000;
+        public static final int activity_main=0x7f090000;
     }
     public static final class string {
-        public static final int ISBN=0x7f060006;
-        public static final int app_name=0x7f060000;
-        public static final int button=0x7f060004;
-        public static final int editText=0x7f060003;
-        public static final int header_bar=0x7f060007;
-        public static final int hello_world=0x7f060001;
-        public static final int menu_settings=0x7f060002;
-        public static final int menue_bar_layer1=0x7f060008;
-        public static final int tab_button=0x7f060009;
-        public static final int textView=0x7f060005;
+        public static final int ISBN=0x7f06000c;
+        public static final int about=0x7f060007;
+        public static final int abschick_button=0x7f06001d;
+        public static final int app_name=0x7f060004;
+        public static final int author_firstname_text=0x7f06000e;
+        public static final int author_lastname_text=0x7f06000d;
+        public static final int back_button=0x7f060003;
+        public static final int book_activity=0x7f060019;
+        public static final int button=0x7f06000a;
+        public static final int editText=0x7f060009;
+        public static final int enter_button_text=0x7f060014;
+        public static final int goToSource_button_text=0x7f060013;
+        public static final int header_bar=0x7f060000;
+        public static final int hello_world=0x7f060005;
+        public static final int help=0x7f060006;
+        public static final int list_activity=0x7f060018;
+        public static final int mail_activity=0x7f06001a;
+        public static final int menu_settings=0x7f060008;
+        public static final int menue_bar_layer1=0x7f060001;
+        public static final int place_text=0x7f060011;
+        public static final int prefrences_activity=0x7f06001b;
+        public static final int publisher_text=0x7f060012;
+        public static final int spinner_ueberschrift_sprache=0x7f060016;
+        public static final int spinner_ueberschrift_zitierw=0x7f060015;
+        public static final int sprache_prompt=0x7f06001c;
+        public static final int tab_button=0x7f060002;
+        public static final int textView=0x7f06000b;
+        public static final int title=0x7f06001e;
+        public static final int title_text=0x7f06000f;
+        public static final int year_text=0x7f060010;
+        public static final int zitierweise_prompt=0x7f060017;
     }
     public static final class style {
         /** 
-        Base application theme, dependent on API level. This theme is replaced
-        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
-    
-
-            Theme customizations available in newer API levels can go in
-            res/values-vXX/styles.xml, while customizations related to
-            backward-compatibility can go here.
-        
-
         Base application theme for API 11+. This theme completely replaces
         AppBaseTheme from res/values/styles.xml on API 11+ devices.
     
@@ -110,10 +159,7 @@ public final class R {
     
  API 14 theme customizations can go here. 
          */
-        public static final int AppBaseTheme=0x7f070000;
-        /**  Application theme. 
- All customizations that are NOT specific to a particular API-level can go here. 
-         */
-        public static final int AppTheme=0x7f070001;
+        public static final int AppBaseTheme=0x7f080001;
+        public static final int app_theme=0x7f080000;
     }
 }

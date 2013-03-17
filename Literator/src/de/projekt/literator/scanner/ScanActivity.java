@@ -1,5 +1,7 @@
 package de.projekt.literator.scanner;
 
+
+
 import de.projekt.literator.EditActivity;
 import de.projekt.literator.R;
 import android.app.Activity;

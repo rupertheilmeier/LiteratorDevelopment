@@ -10,6 +10,7 @@ public class ListsActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_bibligraph_list);
+//		setContentView(R.layout.activity_bibliograph_list_vorlaeufig);
 	}
 
 	@Override
